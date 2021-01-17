@@ -1,0 +1,12 @@
+{# Include - CSS #}
+{% if not definition.INCLUDEDREADMORECSS %}
+	{% INCLUDECSS '@phpbbstudio_readmore/readmore.css' %}
+	{% DEFINE INCLUDEDREADMORECSS = true %}
+{% endif %}
+
+{# Include JS #}
+{% if not definition.INCLUDEDREADMOREMINJS %}
+	{% INCLUDEJS '@phpbbstudio_readmore/libs/readmore.min.js' %}
+	{% INCLUDEJS '@phpbbstudio_readmore/kickstart.js' %}
+	{% DEFINE INCLUDEDREADMOREMINJS = true %}
+{% endif %}

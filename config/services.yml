@@ -1,0 +1,7 @@
+services:
+    phpbbstudio.readmore.listener:
+        class: phpbbstudio\readmore\event\main
+        arguments:
+            - '@language'
+        tags:
+            - { name: event.listener }
